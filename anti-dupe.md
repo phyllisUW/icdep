@@ -1,1 +1,3 @@
-kdfakjfdfa
+# Anti Duplication
+## How can we ensure that each card is received once and only once?
+We can ensure that each card is received once and only once if we mark the final node. If the final node (receiver) is marked as the final and we know that it cannot be returned, then we can make sure that it does not get sent to anything else once it reaches that node. If we recognize that each card can only reach that node once and only once (as it is known as the final one), then the message will stop there at the right destination. Something I also considered but was already mentioned during class is using an ID for each message. If each card has a unique identifying number, then it will not repeat. If there are any messages that have the same ID number, then they should be discarded or ignored. This will make sure that cards are not duplicated. The first method I mentioned ensures that it can only be received once to the final node. 
